@@ -18,6 +18,8 @@ add_filter( 'filter_hook_name', 'ultraaddons_addons_sample_function' );
  * 
  */
 
+
+ //wpto_default_column_arr
  if( !function_exists( 'wpt_new_custom_column' ) ){
    function wpt_new_custom_column( $column_array ) {
        $column_array['new_custom_column'] = 'Custom Column';
@@ -25,3 +27,12 @@ add_filter( 'filter_hook_name', 'ultraaddons_addons_sample_function' );
    }
 }
 add_filter( 'wpto_default_column_arr', 'wpt_new_custom_column' );
+
+//Filter wpto_template_loc_item
+if( !function_exists( 'wpt_temp_file_for_new_column' ) ){
+   function wpt_temp_file_for_new_column( $file ){
+       $file = __DIR__ . '/custom-column.php';
+       return $file;
+   }
+}
+add_filter( 'wpto_template_loc_item_new_custom_column', 'wpt_temp_file_for_new_column', 10 );

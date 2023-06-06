@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Addons Plugin for UltraAddons
  * Plugin URI: #
- * Description: A addons plugin for Woo Product Table, UltraTable, UltraAddons all addons/polugin. It's not a update able plugin. It's only for our Plugin Customization.
+ * Description: A addons plugin for Woo Product Table, UltraTable, UltraAddons all addons/plugin. It's not a update able plugin. It's only for our Plugin Customization.
  * Author: Ibrahim Khalil
  * Author URI: https://profiles.wordpress.org/mdibrahimk48/#content-plugins
  * 
